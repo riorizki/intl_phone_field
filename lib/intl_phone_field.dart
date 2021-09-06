@@ -226,7 +226,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
 
     validator = widget.autoValidate
         ? ((value) =>
-            value != null
+            value == null
                 ? 'Invalid Mobile Number'
                 : null)
         : widget.validator;
